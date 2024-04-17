@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family:'torus';
+  src:url("/src/assets/fonts/Torus_Regular.otf");
+}
+
+@font-face {
+  font-family:'torusBold';
+  src:url("/src/assets/fonts/Torus_Bold.otf");
+}
+
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'torus', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1{
+  font-family: torusBold;
+}
+
+.headerSticky{
+  position: fixed;
+  color: #fff;
+  background-color:#04083ac1;
+}
+
+
+.slick-dots{
+  bottom: -40px !important;
+  padding: 0 5% !important;
+}
+
+
+@media screen and (min-width: 760px){
+  .slick-dots{
+    bottom: -25px !important;
+    padding: 0 !important;
+  }
+}
+
+/* @media (max-width:1024px){} */
+.slick-prev, .slick-next{
+  display: none !important;
+}
+
+#slick-videos .slick-prev, #slick-videos .slick-next{
+  display: block !important;
+}
+
+#slick-videos .slick-prev:before, #slick-videos .slick-next:before{
+  color: black;
+}
+
+.hiddenLogo{
+  display: none;
+}
+
+.menuNavigation a.active {
+  color: #f5a518;
+}
+
+.menhu a.active svg{
+  color: #f5a518;
+}
+
+/*
+.bg-wave{
+  background-image: url(./assets/images/wave.svg);
+  background-position: bottom;
+  background-size: 100%;
+}
+*/
+
+@media screen and (min-width: 2000px){
+  .bannerHome{
+    justify-content: center;
+  }
+}
+
+.bg-faixa{
+  background-image: url(./assets/images/faixa.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.bg-faixa-azul{
+  background-image: url(./assets/images/faixa-azul.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
